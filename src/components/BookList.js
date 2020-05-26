@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 
 class BookList extends Component {
+    // First way to pass the data
+    // You can't pass two contexts properties to the same ContextType
     static contextType = ThemeContext;
     render() { 
         const { isLightTheme, light, dark } = this.context;
