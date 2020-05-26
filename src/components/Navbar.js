@@ -7,6 +7,7 @@ class Navbar extends Component {
     render() { 
 
         return (
+            // This approach would work in the functional component as well. 
             <ThemeContext.Consumer>{(context) => {
                 const { isLightTheme, light, dark } = context;
                 const theme = isLightTheme ? light : dark;
